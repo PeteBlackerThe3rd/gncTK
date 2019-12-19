@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<package>
+  <name>gnc_tool_kit</name>
+  <version>1.0.0</version>
+  <description>Lidar and Camera fusion perception package</description>
+  <maintainer email="pete.blacker@gmail.com">pete blacker</maintainer>
+  <license>TODO</license>
+  <url type="website">http://www.PeteBlacker.com</url>
+  <author email="pete.blacker@gmail.com">pete blacker</author>
+
+
+  <!-- Use test_depend for packages you need only for testing: -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>libpcl-all-dev</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>dp_ptu47_msgs</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>OpenCV</build_depend>
+
+
+
+  <run_depend>libpcl-all-dev</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>tf2</run_depend>
+  <run_depend>tf2_ros</run_depend>
+  <run_depend>image_transport</run_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>pcl_ros</run_depend>
+  <run_depend>dp_ptu47_msgs</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>OpenCV</run_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+ <export>
+   <cpp cflags="-I${prefix}/include" lflags="-L${prefix}/lib -lgnc_tool_kit"/>
+ </export>
+</package>
